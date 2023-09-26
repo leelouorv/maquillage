@@ -1,0 +1,138 @@
+body{
+  margin: 0;
+  font-family: arial;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  height: 70px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link {
+  margin: 10px 30px;
+  color: pink;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #D11149;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+h1 {
+  font-family: 'Croissant One', cursive;
+  font-size: 60px;
+}
+
+h2 {
+  font-family: 'Mooli', sans-serif;
+}
+
+p {  
+  font-family: 'Nunito', sans-serif;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+a{
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+}
+
+a:hover{
+  color:pink;
+}
+
+a:visited{
+  color:black;
+}
+
+/*Banner*/
+body {
+  margin: 0;
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://i.pinimg.com/564x/5d/51/81/5d5181e3a4fc3eb2b66c9a102591e100.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+  height: 150px;
+  padding: 100px;
+}
+
+.banner h1, .banner p {
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/*picto*/
+.title {
+  padding-bottom: 16px;
+  color: pink;
+  font-weight: 700;
+}
+
+.section {
+  padding-top: 30px;
+  margin: 0 150px;
+  margin-bottom: 30px;
+}
+
+.inspi {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.inspi-card {
+  text-align: center ;
+
+}
+
+.inspi-img {
+  height:100px;
+  width: 100px;
+}
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
